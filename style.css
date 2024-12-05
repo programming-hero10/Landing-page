@@ -1,0 +1,522 @@
+/* ______________________________ styling end ______________________________ */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+:root {
+  --text-heading-color: #091133;
+  --paragraph-color: #505f98;
+  --btn-color: #111b47;
+}
+
+body {
+  background: url("images/hero-bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-size: 1000px;
+  background-position: top right;
+}
+/* ------------------header section------------------------------start */
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 150px;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  list-style: none;
+  font-size: 14px;
+}
+
+nav h1 {
+  font-size: 38px;
+  font-weight: bolder;
+  color: var(--text-heading-color);
+}
+
+ul li a {
+  text-decoration: none;
+  color: var(--paragraph-color);
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+nav ul li a {
+  color: var(--paragraph-color);
+  text-decoration: none;
+  font-size: 13px;
+}
+
+/* nav ul li a hover effect */
+
+nav ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+nav ul li:hover::after {
+  width: 100%;
+}
+
+/* nav ul li a hover effect */
+
+/* nav right side btn */
+
+nav .btn {
+  text-decoration: none;
+  color: #fff;
+  background: #000;
+  padding: 10px 50px;
+  font-size: 12px;
+  transition: 0.5s ease;
+  &:hover {
+    background: transparent;
+    color: #000;
+  }
+}
+
+/* nav right side btn */
+
+/* ------------------header section------------------------------end */
+
+/* __________________________Hero container__________________________ start */
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  gap: 390px;
+  padding: 150px 100px;
+}
+
+/* _______________hero container image___________________ */
+.hero-container .img img {
+  width: 660.63px;
+}
+/* _______________hero container image___________________ */
+/* _______________hero container textses___________________ */
+.hero-container .text h1 {
+  font-size: 50px;
+  line-height: 60px;
+  color: #091133;
+}
+/* _______________hero container textses___________________ */
+.divep {
+  margin-top: 63px;
+  margin-bottom: 63px;
+}
+.p {
+  color: #505f98;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* hero container all a */
+
+.hero-container a {
+  text-decoration: none;
+  font-size: 16px;
+}
+/* shear btn */
+.btn1 {
+  background: #141719;
+  color: #fff;
+  padding: 10px 40px;
+  transition: 0.5s ease;
+  margin-right: 20px;
+  border: 2px solid transparent;
+  &:hover {
+    background: transparent;
+    color: #000;
+    border: 2px solid #141719;
+  }
+}
+.btn2 {
+  color: #000;
+  background: transparent;
+  padding: 10px 40px;
+  transition: 0.5s ease;
+  border: 2px solid #141719;
+  transform: scale(0);
+  &:hover {
+    background: #141719;
+    color: #fff;
+    border: 2px solid transparent;
+  }
+}
+/* shear btn */
+/* __________________________Hero container__________________________ end */
+
+/* hero-section started by all code */
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  gap: 190px;
+  padding: 150px 220px;
+}
+
+.hero-section .img img {
+  width: 540px;
+}
+
+.hero-section .cards {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  gap: 100px;
+  text-align: start;
+}
+
+.hero-section .cards .card img {
+  width: 55px;
+}
+
+/* hero-section text */
+.hero-section .cards .card h3 {
+  color: #091133;
+  font-size: 16px;
+}
+
+.hero-section .cards .card p {
+  color: #5d6970;
+  font-size: 12px;
+}
+
+.hero-section .text h1 {
+  font-size: 38px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+.hero-section .hero-text {
+  margin-bottom: 50px;
+}
+/* hero-section text */
+
+/*cards section */
+
+.card-section .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+}
+
+.card-section .cards .card {
+  display: flex;
+  align-items: center;
+  padding: 50px 290px;
+  gap: 190px;
+
+  & img {
+    width: 540px;
+  }
+  & a {
+    text-decoration: none;
+  }
+  & h1 {
+    color: #091133;
+    font-size: 38px;
+    margin-bottom: 20px;
+  }
+}
+/*  card section */
+
+/* footer side manig footer top section */
+
+.footer-side {
+  text-align: center;
+  padding: 200px 650px;
+  padding-bottom: 0;
+  background: url("images/footer-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  & h3 {
+    font-size: 38px;
+    font-weight: bolder;
+    color: #091133;
+    margin-bottom: 16px;
+    font-weight: 600;
+  }
+  & p {
+    color: #6f7cb2;
+    margin-bottom: 62px;
+  }
+  & h1 {
+    font-size: 50px;
+    color: #222f65;
+    font-weight: 500;
+    line-height: 66px;
+  }
+  & a {
+    margin-right: 0;
+    text-decoration: none;
+  }
+}
+/* footer side manig footer top section */
+
+/* footer started */
+/* footer divided by 2 parts */
+
+/* so styling part1 */
+
+footer .footer1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  & a {
+    text-decoration: none;
+  }
+}
+
+/* styling part 2 */
+
+footer .footer2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+/* part2 lonks under icons style */
+
+footer .footer2 .link i {
+  margin-right: 20px;
+  color: var(--paragraph-color);
+}
+@media screen and (max-width: 768px) {
+  /* header responsive */
+
+  nav {
+    gap: 20px;
+    flex-direction: column;
+    padding: 20px;
+  }
+  nav .btn {
+    padding: 5px 50px;
+    font-size: 16px;
+  }
+  /* header responsive */
+
+  /* hero container responsive */
+  .hero-container {
+    flex-direction: column;
+    padding: 20px 20px;
+    gap: 50px;
+  }
+  .hero-container .text h1 {
+    font-size: 30px;
+  }
+  .hero-container .text p {
+    font-size: 16px;
+  }
+  .hero-container .divep {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .hero-container .img img {
+    width: 400px;
+  }
+  /* hero container responsive */
+  /* shear btn responsive*/
+  .btn1 {
+    padding: 10px 20px;
+  }
+  .btn2 {
+    padding: 10px 30px;
+  }
+  /* shear btn responsive*/
+  /* hero section responsive*/
+  .hero-section {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 130px;
+    margin-bottom: 90px;
+  }
+  .hero-section .hero-text h1 {
+    font-size: 30px;
+  }
+  .hero-section .img img {
+    width: 300px;
+  }
+  /* card section responsive */
+  .card-section .cards .card {
+    flex-direction: column;
+    padding: 0;
+    gap: 50px;
+  }
+  .card-section .cards {
+    gap: 100px;
+    padding: 100px 20px;
+  }
+  .card-section .cards .card .text h1 {
+    font-size: 30px;
+  }
+  .card-section .cards .card .img img {
+    width: 300px;
+  }
+  /* card section responsive */
+
+  /* footer top responsive */
+
+  .footer-side {
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    padding-top: 150px;
+    & h3 {
+      font-size: 30px;
+    }
+    & h1 {
+      font-size: 40px;
+    }
+  }
+  /* footer top responsive */
+
+  /* footer responsive part1 */
+  footer .footer1 {
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px 50px;
+
+    & .btn1 {
+      margin-left: 25px;
+    }
+  }
+  /* footer responsive part1 */
+  /* footer responsive part2 */
+  footer .footer2 {
+    flex-direction: column;
+    gap: 50px;
+    padding: 30px 50px;
+  }
+  /* footer responsive part2 */
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* header responsive */
+  nav {
+    padding: 50px 40px;
+  }
+  /* header responsive */
+  /* hero container responsive */
+  .hero-container {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .hero-container .img img {
+    width: 400px;
+  }
+  /* hero container responsive */
+  /* hero SECTION responsive */
+  .hero-section {
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 50px;
+    margin-top: 250px;
+    padding: 100px;
+  }
+  /* card section responsive */
+  .card-section .cards .card {
+    flex-direction: column;
+    padding: 20px 50px;
+    gap: 50px;
+  }
+  .card-section .cards {
+    gap: 100px;
+    padding: 100px 20px;
+    text-align: center;
+  }
+  .card-section .cards .card .text h1 {
+    font-size: 30px;
+  }
+  .card-section .cards .card .img img {
+    width: 300px;
+  }
+  /* card section responsive */
+
+  /* footer top resopnsive */
+  .footer-side {
+    padding: 20px;
+    padding-top: 280px;
+  }
+}
+@media screen and (min-width: 1023px) and (max-width: 1500px) {
+  /* hero container responsive */
+
+  .hero-container {
+    flex-direction: column;
+    padding: 50px;
+    gap: 50px;
+    text-align: center;
+  }
+  .hero-container .img img {
+    width: 400px;
+  }
+  .hero-container .text h1 {
+    font-size: 40px;
+  }
+  /* hero container responsive */
+  /* hero section responsive */
+  .hero-section {
+    flex-direction: column;
+    padding: 50px;
+    margin-top: 290px;
+    text-align: center;
+    gap: 0;
+  }
+  /* card section responsive */
+  .hero-section .cards {
+    padding: 0 50px;
+    text-align: center;
+  }
+  .hero-section .img img {
+    width: 400px;
+  }
+  .card-section .cards .card {
+    flex-direction: column;
+    padding: 20px 50px;
+    gap: 50px;
+  }
+  .card-section .cards {
+    gap: 100px;
+    padding: 100px 20px;
+    text-align: center;
+  }
+  .card-section .cards .card .text h1 {
+    font-size: 30px;
+  }
+  .card-section .cards .card .img img {
+    width: 400px;
+  }
+  /* card section responsive */
+  
+  /* footer top responsive */
+  .footer-side {
+    padding: 50px;
+    padding-top: 220px;
+  }
+}
+
+/* ______________________________ styling end ______________________________ */
